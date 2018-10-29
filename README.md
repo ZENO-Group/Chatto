@@ -46,7 +46,7 @@ Check the [wiki!](https://github.com/badoo/Chatto/wiki)
   ```
 If you like living on the bleeding edge, you can use the `master` branch with:
   ```
-  pod 'Chatto', :git => 'https://github.com/badoo/Chatto', :branch => 'master'
+  pod 'Chatto', :git => 'https://github.com/ZENO-Group/Chatto', :branch => 'master'
   pod 'ChattoAdditions', :git => 'https://github.com/badoo/Chatto', :branch => 'master'
   ```
 3. Run `pod install`
@@ -56,11 +56,11 @@ If you like living on the bleeding edge, you can use the `master` branch with:
 If you’re using [Carthage](https://github.com/Carthage/Carthage#if-youre-building-for-ios-tvos-or-watchos), simply add Chatto to your Cartfile:
 ```
 # Swift 4
-github "badoo/Chatto"
+github "ZENO-Group/Chatto"
 ```
 ```
 # Swift 2.x
-github "badoo/Chatto" "swift-2"
+github "ZENO-Group/Chatto" "swift-2"
 ```
 
 ### Manually
