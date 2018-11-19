@@ -145,13 +145,14 @@ class KeyboardTracker {
     }
 
     private func adjustTrackingViewSize() {
-        let inputContainerHeight = self.inputContainer.bounds.height
-        if self.keyboardTrackerView.preferredSize.height != inputContainerHeight {
-            self.keyboardTrackerView.preferredSize.height = inputContainerHeight
-            self.isPerformingForcedLayout = true
-            self.keyboardTrackerView.window?.layoutIfNeeded()
-            self.isPerformingForcedLayout = false
-        }
+        //TODO 2: Fix keyboard hidden bug, but still need consideration
+//        let inputContainerHeight = self.inputContainer.bounds.height
+//        if self.keyboardTrackerView.preferredSize.height != inputContainerHeight {
+//            self.keyboardTrackerView.preferredSize.height = inputContainerHeight
+//            self.isPerformingForcedLayout = true
+//            self.keyboardTrackerView.window?.layoutIfNeeded()
+//            self.isPerformingForcedLayout = false
+//        }
     }
 
     private func layoutInputAtBottom() {
