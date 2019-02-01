@@ -110,6 +110,11 @@ open class BaseChatViewController: UIViewController, UICollectionViewDataSource,
     private func setupTapGestureRecognizer() {
         self.collectionView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(BaseChatViewController.userDidTapOnCollectionView)))
     }
+  
+    // TX Addition to hide the keyboard when user starts dragging the collectionView
+    public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        userDidTapOnCollectionView()
+    }
 
     public var endsEditingWhenTappingOnChatBackground = true
     @objc
