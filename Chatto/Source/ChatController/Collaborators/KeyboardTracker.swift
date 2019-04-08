@@ -31,7 +31,7 @@ public enum KeyboardStatus {
     case shown
 }
 
-class KeyboardTracker {
+public class KeyboardTracker {
     private var keyboardStatus: KeyboardStatus = .hidden
     private let view: UIView
     var trackingView: UIView {
@@ -48,7 +48,7 @@ class KeyboardTracker {
         return trackingView
     }()
 
-    var isTracking = false
+    public var isTracking = false
     var inputContainer: UIView
     private var notificationCenter: NotificationCenter
 

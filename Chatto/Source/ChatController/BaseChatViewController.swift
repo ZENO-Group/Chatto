@@ -239,7 +239,7 @@ open class BaseChatViewController: UIViewController, UICollectionViewDataSource,
     }
 
     var notificationCenter = NotificationCenter.default
-    var keyboardTracker: KeyboardTracker!
+    public var keyboardTracker: KeyboardTracker!
 
     public var isFirstLayout: Bool = true
     override open func viewDidLayoutSubviews() {
